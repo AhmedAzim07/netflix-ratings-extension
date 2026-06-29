@@ -2,7 +2,7 @@
 
 A Chrome extension that injects IMDb and Rotten Tomatoes scores directly into the Netflix detail modal — no tab-switching, no searching.
 
-![Version](https://img.shields.io/badge/version-3.0-red) ![Manifest](https://img.shields.io/badge/manifest-v3-blue) ![License](https://img.shields.io/badge/license-MIT-green)
+![Version](https://img.shields.io/badge/version-3.0-red) ![Manifest](https://img.shields.io/badge/manifest-v3-blue)
 
 ---
 
@@ -117,7 +117,3 @@ If the title isn't being picked up, Netflix may have updated their class names. 
 - MutationObserver + History API for SPA navigation detection
 
 ---
-
-## License
-
-MIT
