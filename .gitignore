@@ -1,0 +1,14 @@
+# API key — never commit this
+config.js
+
+# Packaged builds
+*.zip
+*.crx
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+*.swp

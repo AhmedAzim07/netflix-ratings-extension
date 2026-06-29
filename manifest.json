@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Netflix Ratings Overlay",
+  "version": "3.0",
+  "description": "Shows IMDb and Rotten Tomatoes scores inside the Netflix detail modal.",
+  "content_scripts": [
+    {
+      "matches": ["*://www.netflix.com/*"],
+      "js": ["config.js", "content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "host_permissions": [
+    "https://www.omdbapi.com/*"
+  ]
+}

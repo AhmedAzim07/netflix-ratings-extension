@@ -1,0 +1,76 @@
+/* ============================================================
+   Netflix Ratings Overlay — styles.css v3
+   Pill injected inside the modal's info section
+   ============================================================ */
+
+/*
+  The pill lives INSIDE .previewModal--info, prepended before
+  the year/runtime metadata row. It uses normal document flow
+  so it sits naturally in the circled empty space.
+*/
+
+#nr-pill {
+  /* Pill shape */
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 9px !important;
+  border-radius: 999px !important;
+  padding: 8px 18px !important;
+
+  /* Frosted glass — translucent dark */
+  background: rgba(10, 10, 10, 0.55) !important;
+  backdrop-filter: blur(20px) saturate(200%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(200%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.16) !important;
+  box-shadow: 0 3px 18px rgba(0, 0, 0, 0.45) !important;
+
+  /* Spacing from surrounding content */
+  margin: 14px 0 6px 0 !important;
+
+  /* Typography */
+  font-family: "Netflix Sans", "Helvetica Neue", Arial, sans-serif !important;
+  font-size: 14px !important;
+  color: #fff !important;
+  white-space: nowrap !important;
+  max-width: 320px !important;
+  overflow: hidden !important;
+
+  /* Don't steal clicks from the modal */
+  pointer-events: none !important;
+
+  /* Stack above Netflix's content */
+  position: relative !important;
+  z-index: 9999 !important;
+}
+
+#nr-pill.nr-loading {
+  opacity: 0.55 !important;
+}
+
+/* Title name — slightly muted, truncated */
+.nr-pname {
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  color: rgba(255, 255, 255, 0.72) !important;
+  letter-spacing: 0.03em !important;
+  max-width: 140px !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  text-transform: none !important;
+}
+
+/* Separator dots */
+.nr-pdot {
+  font-size: 10px !important;
+  color: rgba(255, 255, 255, 0.28) !important;
+  flex-shrink: 0 !important;
+}
+
+/* Rating scores — bold and bright */
+.nr-pscore {
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  color: #fff !important;
+  flex-shrink: 0 !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6) !important;
+}
