@@ -117,3 +117,8 @@ If the title isn't being picked up, Netflix may have updated their class names. 
 - MutationObserver + History API for SPA navigation detection
 
 ---
+
+## License
+
+MIT
+
